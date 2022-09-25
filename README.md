@@ -19,3 +19,6 @@ patients retrieve from the SQlite DB
 Deploy to Azure or GCP, insert in IP of machines in
 readme.md file in repo
 Share github URL with me in classroom
+
+# IP Address
+34.121.166.249
