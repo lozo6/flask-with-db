@@ -23,10 +23,10 @@ connect.commit()
 
 # insert *dummy* data into table
 db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob) values('12345','John', 'Smith', '01/01/1999')")
-db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob) values('12345','Jane', 'Doe', '02/02/1999')")
-db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob) values('12345','Mary', 'Smith', '03/03/1999')")
-db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob) values('12345','Bob', 'Smith', '04/04/1999')")
-db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob) values('12345','John', 'Doe', '05/05/1999')")
+db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob) values('23456','Jane', 'Doe', '02/02/1999')")
+db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob) values('34567','Mary', 'Smith', '03/03/1999')")
+db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob) values('45678','Bob', 'Smith', '04/04/1999')")
+db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob) values('56789','John', 'Doe', '05/05/1999')")
 
 connect.commit()
 
