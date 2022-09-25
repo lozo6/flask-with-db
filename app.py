@@ -13,11 +13,15 @@ def get_db_connection():
 
 @app.route('/')
 def index():
-    db = get_db_connection()
-    patientListSql = db.execute('SELECT * FROM patient_table').fetchall()
-    db.close()
+    return render_template('home.html')
+
+@app.route('/patients')
+def bootstrap():
+    conn = get_db_connection()
+    patientListSql = conn.execute('SELECT * FROM patient_table').fetchall()
+    conn.close()
     print('patientListSql:', patientListSql)
-    return render_template('index.html', listPatients=patientListSql)
+    return render_template('patients.html', listPatients=patientListSql)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=80)
