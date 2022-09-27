@@ -21,4 +21,4 @@ readme.md file in repo
 Share github URL with me in classroom
 
 # IP Address
-34.121.166.249
+http://34.121.166.249
